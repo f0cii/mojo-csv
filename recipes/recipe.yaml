@@ -13,7 +13,8 @@ source:
 
 build:
   script:
-    - magic run mojo package csv -o ${PREFIX}/csv.mojopkg
+    - mkdir -p $PREFIX/lib/mojo
+    - magic run mojo package csv -o ${PREFIX}/lib/mojo/csv.mojopkg
 
 requirements:
   run:
